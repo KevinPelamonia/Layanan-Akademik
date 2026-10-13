@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal Layanan Akademik: ajukan surat aktif kuliah, transkrip sementara, cuti akademik, dan legalisir secara daring.">
+  <title>Portal Layanan Akademik – Ajukan Surat dan Dokumen Kuliah</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <img src="img/logo.svg" width="44" height="44" alt="" >
+      <div>
+        <h1>Portal Layanan Akademik</h1>
+        <p class="tagline">Biro Akademik Universitas Contoh</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <ul class="wrap">
+      <li><a href="#info">Informasi</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#permohonan">Form permohonan</a></li>
+    </ul>
+  </nav>
+
+  <main id="konten-utama">
+    <section id="info" class="wrap intro" aria-labelledby="judul-info">
+      <h2 id="judul-info">UNIVERSITAS PATTIMURA</h2>
+      <p>Pilih layanan, isi form, lalu pantau hasilnya lewat email kampus. Pengajuan diproses pada hari kerja, pukul 08.00–16.00 WIT.</p>
+    </section>
+
+    <section id="layanan" class="wrap" aria-labelledby="judul-layanan">
+      <h2 id="judul-layanan">Layanan yang tersedia</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Surat Aktif Kuliah</h3>
+          <p>Bukti bahwa Anda terdaftar aktif pada semester berjalan. Selesai dalam 2 hari kerja.</p>
+          <a class="btn" href="#permohonan">Ajukan Surat Aktif Kuliah</a>
+        </article>
+        <article class="card">
+          <h3>Transkrip Sementara</h3>
+          <p>Rekap nilai sementara untuk beasiswa atau magang. Selesai dalam 3 hari kerja.</p>
+          <a class="btn" href="#permohonan">Ajukan Transkrip Sementara</a>
+        </article>
+        <article class="card">
+          <h3>Cuti Akademik</h3>
+          <p>Permohonan berhenti studi sementara maksimal dua semester. Perlu persetujuan dosen wali.</p>
+          <a class="btn" href="#permohonan">Ajukan Cuti Akademik</a>
+        </article>
+        <article class="card">
+          <h3>Legalisir Dokumen</h3>
+          <p>Pengesahan ijazah atau transkrip untuk keperluan melamar kerja. Selesai dalam 1 hari kerja.</p>
+          <a class="btn" href="#permohonan">Ajukan Legalisir</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="permohonan" class="wrap" aria-labelledby="judul-form">
+      <h2 id="judul-form">Form permohonan layanan</h2>
+      <p>Kolom bertanda <span aria-hidden="true">*</span><span class="sr-only">bintang</span> wajib diisi.</p>
+
+      <form action="#" method="post" class="form">
+        <div class="field">
+          <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label>
+          <input type="text" id="nama" name="nama" autocomplete="name" required minlength="3" placeholder="Contoh: Siti Rahma">
+        </div>
+
+        <div class="field">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" name="nim" inputmode="numeric" pattern="[0-9]{8,12}" aria-describedby="bantuan-nim" placeholder="Contoh: 20230001">
+          <small id="bantuan-nim">8–12 digit angka.</small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="bantuan-email" placeholder="nama@gmail.com">
+          <small id="bantuan-email">Hasil pengajuan dikirim ke alamat ini.</small>
+        </div>
+
+        <fieldset class="field">
+          <legend>Jenis layanan <span aria-hidden="true">*</span></legend>
+          <div class="radios">
+            <label><input type="radio" name="layanan" value="surat-aktif" required> Surat Aktif Kuliah</label>
+            <label><input type="radio" name="layanan" value="transkrip"> Transkrip Sementara</label>
+            <label><input type="radio" name="layanan" value="cuti"> Cuti Akademik</label>
+            <label><input type="radio" name="layanan" value="legalisir"> Legalisir Dokumen</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="keperluan">Keperluan <span aria-hidden="true">*</span></label>
+          <textarea id="keperluan" name="keperluan" rows="5" required minlength="10" maxlength="500" aria-describedby="bantuan-keperluan"></textarea>
+          <small id="bantuan-keperluan">Jelaskan singkat, 10–500 karakter.</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim permohonan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Biro Akademik, Gedung Rektorat Lantai 1 · Senin–Jumat 08.00–16.00 WITA</p>
+      <p><a href="mailto:akademik@unpatti.ac.id">akademik@unpatti.ac.id</a></p>
+    </div>
+  </footer>
+</body>
+</html>
