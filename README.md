@@ -2,8 +2,8 @@
 
 Halaman web client semantik, responsif, dan aksesibel. Tanpa JavaScript.
 
-- **Demo:** `https://USERNAME.github.io/portal-akademik/` (aktifkan GitHub Pages: Settings → Pages → branch `main`)
-- **Repo:** `https://github.com/USERNAME/portal-akademik`
+- **Demo:** https://kevinpelamonia.github.io/Layanan-Akademik/
+- **Repo:** https://github.com/KevinPelamonia/Layanan-Akademik
 
 ## Keputusan desain
 - **Semantik:** `header`, `nav`, `main`, `section`, `article` (4 kartu), `form`, `footer`; heading h1 → h2 → h3 berurutan.
